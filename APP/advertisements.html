@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advertisements</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="" style="z-index: -99999 !important">
+    <div class="ui right flyout" style="background-color: white !important;">
+      <div class="header">Job Details</div>
+
+      <div class="scrolling content">
+        <h1>Job Title: Data Analyst</h1>
+
+        <h2>Responsibilities:</h2>
+        <ul>
+          <li>Collect and clean data from various sources.</li>
+          <li>Analyze large datasets to identify trends and patterns.</li>
+          <li>Prepare reports and visualizations to communicate insights.</li>
+          <li>
+            Collaborate with cross-functional teams to support data-driven
+            decision-making.
+          </li>
+          <li>Stay up-to-date with data analysis tools and techniques.</li>
+        </ul>
+
+        <h2>Job Description:</h2>
+        <p>
+          We are seeking a motivated and detail-oriented Data Analyst to join
+          our dynamic team. The ideal candidate will have a passion for working
+          with data and a strong analytical mindset. In this role, you will be
+          responsible for collecting, analyzing, and interpreting data to
+          provide valuable insights to our organization.
+        </p>
+
+        <h2>Responsibilities:</h2>
+        <ul>
+          <li>Collect and clean data from various sources.</li>
+          <li>Analyze large datasets to identify trends and patterns.</li>
+          <li>Prepare reports and visualizations to communicate insights.</li>
+          <li>
+            Collaborate with cross-functional teams to support data-driven
+            decision-making.
+          </li>
+          <li>Stay up-to-date with data analysis tools and techniques.</li>
+        </ul>
+
+        <h2>Requirements:</h2>
+        <ul>
+          <li>
+            Bachelor's degree in a related field (e.g., Statistics, Data
+            Science, Computer Science).
+          </li>
+          <li>Proficiency in data analysis tools such as Python, R, or SQL.</li>
+          <li>Strong problem-solving and critical-thinking skills.</li>
+          <li>Excellent communication and data presentation abilities.</li>
+          <li>
+            Experience with data visualization tools (e.g., Tableau, Power BI)
+            is a plus.
+          </li>
+        </ul>
+
+        <h2>Location:</h2>
+        <p>Rennes (35)</p>
+
+        <h2>Employment Type:</h2>
+        <p>Full-Time</p>
+
+        <h2>How to Apply:</h2>
+        <p>
+          If you are a data enthusiast who enjoys turning data into actionable
+          insights, we would love to hear from you! Please submit your resume
+          and a cover letter outlining your relevant experience to
+          <a href="mailto:email@example.com">email@example.com</a>.
+        </p>
+        <a href="postuler.html"
+          ><button class="ui primary button">To Apply</button></a
+        >
+        <a href="advertisements.html"
+          ><button class="ui button">Cancel</button>
+        </a>
+      </div>
+    </div>
+    <script>
+      function postuler() {
+        $(".ui.right.flyout").flyout("show");
+      }
+    </script>
+    <div class="ui cards" id="cards" style="margin-top: 14px !important;">
+      <div
+        class="ui card"
+        style="padding: 12px !important; margin: 12px !important"
+      >
+        <div class="content">
+          <div class="header">Data Analyst</div>
+        </div>
+        <p style="text-align: justify">
+          Join our team as a Data Analyst! If you have a passion for data and
+          love transforming information into insights, this role is for you. As
+          a Data Analyst, you'll be at the forefront of decision-making,
+          collaborating with cross-functional teams and uncovering valuable
+          trends from diverse datasets. Don't miss the opportunity to contribute
+          to our data-driven success story
+        </p>
+        <div class="extra content">
+          <button class="ui button" onclick="postuler()">Learn more</button>
+        </div>
+      </div>
+      <div
+        class="ui card"
+        style="padding: 12px !important; margin: 12px !important"
+      >
+        <div class="content">
+          <div class="header">Data Analyst</div>
+        </div>
+        <p style="text-align: justify">
+          Join our team as a Data Analyst! If you have a passion for data and
+          love transforming information into insights, this role is for you. As
+          a Data Analyst, you'll be at the forefront of decision-making,
+          collaborating with cross-functional teams and uncovering valuable
+          trends from diverse datasets. Don't miss the opportunity to contribute
+          to our data-driven success story
+        </p>
+        <div class="extra content">
+          <button class="ui button" onclick="postuler()">Lear more</button>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div class="ui flyout">
+      <div class="header">Job Details</div>
+      <div class="scrolling content"></div>
+    </div>
+  </body>
+</html>
+<script>
+  // Assuming you want to create 5 similar div elements
+for (let i = 0; i < 5; i++) {
+    // Create a new div element
+    var newDiv = document.createElement("div");
+    
+    // Set class and style attributes
+    newDiv.className = "ui card";
+    newDiv.style.padding = "12px !important";
+    newDiv.style.margin = "12px !important";
+
+    // Set the inner HTML of the div
+    newDiv.innerHTML = `
+        <div class="content">
+            <div class="header">Data Analyst</div>
+        </div>
+        <p style="text-align: justify">
+            Join our team as a Data Analyst! If you have a passion for data and
+            love transforming information into insights, this role is for you. As
+            a Data Analyst, you'll be at the forefront of decision-making,
+            collaborating with cross-functional teams and uncovering valuable
+            trends from diverse datasets. Don't miss the opportunity to contribute
+            to our data-driven success story
+        </p>
+        <div class="extra content">
+            <button class="ui button" onclick="postuler()">Learn more</button>
+        </div>
+    `;
+
+    // Get the container element by ID
+    var container = document.getElementById("cards");
+
+    // Append the new div to the container
+    //container.appendChild(newDiv);
+}
+
+</script>
